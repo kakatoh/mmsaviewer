@@ -1,0 +1,21 @@
+export default {
+  Name: "Purine/Pyrimidine",
+  Glyphs: {
+    " ": "#FFFFFF",
+    "-": "#FFFFFF",
+    a: " #FF83FA",
+    A: " #FF83FA",
+    c: " #40E0D0",
+    C: " #40E0D0",
+    g: " #FF83FA",
+    G: " #FF83FA",
+    r: " #FF83FA",
+    R: " #FF83FA",
+    t: " #40E0D0",
+    T: " #40E0D0",
+    u: " #40E0D0",
+    U: " #40E0D0",
+    y: " #40E0D0",
+    Y: " #40E0D0",
+  },
+};

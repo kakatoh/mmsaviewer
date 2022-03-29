@@ -1,0 +1,64 @@
+<div class="modal" id="MAFFTMSAViewerModal" tabindex="-1" role="dialog" aria-labelledby="MSAViewerModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="MAFFTMSAViewerModalLabel">MSA Colors</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-labelledby="Close"></button>
+      </div>
+
+      <div class="modal-body">
+         <div class="container">
+
+           <div class="row align-items-center mb-2">
+             <div class="col-4">
+               <label id="MAFFTMSAViewer_menu_settings_msa_colors_dropdown_label">Color Scheme</label>
+             </div>
+             <div class="col">
+               <select class="form-select" id="MAFFTMSAViewer_menu_settings_msa_colors_dropdown" aria-labelledby="MAFFTMSAViewer_menu_settings_msa_colors_dropdown_label">
+               </select>
+             </div>
+           </div>
+
+           <div class="row align-items-center mb-2">
+             <div class="col-4">
+               <label id="MAFFTMSAViewer_menu_settings_consensus_color_mode_label">Consensus Color Mode</label>
+             </div>
+             <div class="col">
+               <select class="form-select" id="MAFFTMSAViewer_menu_settings_consensus_color_mode_dropdown" aria-labelledby="MAFFTMSAViewer_menu_settings_consensus_color_mode_label">
+                 <option value="off"
+                   title="Ignore consensus and color only by MSA cell value.">
+                   Off
+                 </option>
+                 <option value="color_by_consensus"
+                   title="Color MSA cell only if it matches consensus sequence.">
+                   Color by Consensus
+                 </option>
+                 <option value="vary_by_consensus"
+                   title="Color if MSA cell matches consensus and vary intensity according to consensus percentage in MSA column.">
+                   Vary by Consensus
+                 </option>
+               </select>
+             </div>
+           </div>
+
+           <div class="row align-items-center" title="Only color MSA cell if percentage consensus for column is above threshold.">
+             <div class="col-5">
+               <label id="MAFFTMSAViewer_menu_settings_msa_colors_color_by_consensus_cutoff_label">Consensus Cutoff (%)</label>
+             </div>
+             <div class="col">
+               <input class="form-control" id="MAFFTMSAViewer_menu_settings_msa_colors_color_by_consensus_cutoff" type="number" min=0 max=100 step=0.5 value="0">
+             </div>
+           </div>
+
+        </div>
+      </div>
+
+
+      </br>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="MAFFTMSAViewerApplyButton">Apply</button>
+      </div>
+
+    </div>
+  </div>
+</div>

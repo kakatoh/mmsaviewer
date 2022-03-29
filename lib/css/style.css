@@ -1,0 +1,54 @@
+#MAFFTMSAViewerMainHTML {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#MAFFTMSAViewerMainBody {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#MAFFTMSAViewerMain {
+  height: 100%;
+  width: 100%;
+  touch-action: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+#MAFFTMSAViewerMainContainer {
+  height: 100%;
+  width: 100%;
+}
+
+#MAFFTMSAViewerMainContainerRow {
+  height: 100%;
+}
+
+#MAFFTMSAViewerWebGLCanvas {
+  touch-action: none;
+  margin: 0;
+}
+
+#MAFFTMSAViewerControlBar {
+  touch-action: none;
+  margin: 0;
+  padding: 4px;
+  width: 100%;
+}
+
+#MAFFTMSAViewerPopperTooltip {
+  color: black;
+  background: white;
+  border: 1px solid black;
+  display: none;
+  padding: 4px;
+  font-size: 75%;
+  pointer-events: none;
+}
+
+#MAFFTMSAViewerPopperTooltip[data-show] {
+  display: block;
+}

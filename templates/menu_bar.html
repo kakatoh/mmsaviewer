@@ -1,0 +1,75 @@
+<!--Begin top menu bar-->
+<nav class="navbar navbar-expand-sm navbar-light bg-light pt-1 pb-1">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">MAFFT MSA Viewer</a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="MAFFTMSAViewer_menu_file_button" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            File
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="MAFFTMSAViewer_menu_file_button">
+            <li><a id="MAFFTMSAViewer_menu_file_open_url" class="dropdown-item" href="#">Open FASTA URL...</a></li>
+            <li><a id="MAFFTMSAViewer_menu_file_open_file" class="dropdown-item" href="#">Open FASTA Local File...</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="MAFFTMSAViewer_menu_share_button" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="display: none">
+            Share
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="MAFFTMSAViewer_menu_share_button">
+            <li><a id="MAFFTMSAViewer_menu_share_url" class="dropdown-item" href="#" style="display: none">Share by URL...</a></li>
+            <li><a id="MAFFTMSAViewer_menu_share_png" class="dropdown-item" href="#">Export PNG...</a></li>
+            <li><a id="MAFFTMSAViewer_menu_share_fasta" class="dropdown-item" href="#">Export FASTA...</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="MAFFTMSAViewer_menu_settings_button" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Settings
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="MAFFTMSAViewer_menu_settings_button">
+            <li><a id="MAFFTMSAViewer_menu_settings_interface_colors" class="dropdown-item" href="#">Interface Colors</a></li>
+            <li><a id="MAFFTMSAViewer_menu_settings_msa_colors" class="dropdown-item" href="#">MSA Colors</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="MAFFTMSAViewer_menu_help_button" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Help
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="MAFFTMSAViewer_menu_help_button">
+            <li><a id="MAFFTMSAViewer_menu_help_about" class="dropdown-item" href="#">About</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Begin tool bar-->
+<nav class="navbar navbar-expand-sm navbar-light bg-light pt-1 pb-1" id="MAFFTMSAViewerToolbar" style="display:none;">
+  <div class="container-fluid">
+    <form onSubmit="return false;" class="input-group input-group-sm">
+      <span class="input-group-text" id="MAFFTMSAViewer_toolbar_position_input_label">Position:</span>
+      <input type="text" class="form-control" id="MAFFTMSAViewer_toolbar_position_input" aria-label="MSA Position" aria-describedby="MAFFTMSAViewer_toolbar_position_input_label">
+      <button type="submit" class="btn btn-sm btn-primary" id="MAFFTMSAViewer_toolbar_position_input_button" type="button">Go</button>
+    </form>
+
+    <div class="dropdown mx-2">
+      <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="MAFFTMSAViewer_toolbar_wheelmode_button" data-bs-toggle="dropdown" aria-expanded="false">
+      Wheel Mode: Zoom
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="MAFFTMSAViewer_toolbar_wheelmode_button">
+        <li><a class="dropdown-item" id="MAFFTMSAViewer_toolbar_wheelmode_zoom" href="#">☑ Zoom</a></li>
+        <li><a class="dropdown-item" id="MAFFTMSAViewer_toolbar_wheelmode_omni" href="#">☐ Omnidirectional</a></li>
+        <li><a class="dropdown-item" id="MAFFTMSAViewer_toolbar_wheelmode_horizontal" href="#">☐ Horizontal</a></li>
+        <li><a class="dropdown-item" id="MAFFTMSAViewer_toolbar_wheelmode_vertical" href="#">☐ Vertical</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>

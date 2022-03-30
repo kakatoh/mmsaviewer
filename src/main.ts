@@ -60,8 +60,8 @@ export async function StartMSAViewer(window: CustomWindow): Promise<void> {
     FontTexture: new Image(),
     VariableFontTexture: new Image(),
     VariableFontInfo: null,
-    MSAColors: ColorCollection["MAFFT General"],
-    ColorTexture: BuildColorTexture(ColorCollection["MAFFT General"]),
+    MSAColors: ColorCollection["Miyata"],
+    ColorTexture: BuildColorTexture(ColorCollection["Miyata"]),
   };
 
   //Initialize window geometry
@@ -173,7 +173,7 @@ export async function StartMSAViewer(window: CustomWindow): Promise<void> {
     ScrollbarBGColor: "#777777",
     ScrollbarHandleColor: "#DDDDDD",
     ConsensusColorBy: true,
-    ConsensusVaryBy: true,
+    ConsensusVaryBy: false,
     ConsensusCutoff: 0.0,
   };
 

@@ -4,4 +4,3 @@ channels:
   - defaults
 dependencies:
   - nodejs=12.22.6
-  - go=1.16.4

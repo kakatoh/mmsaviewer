@@ -37,6 +37,11 @@ cp -a templates/version.html build/dist/VERSION
 cp -a LICENSE.md build/dist/
 cp -a LICENSE_NOTICES build/dist/
 
+#Run prettier to fix formatting
+npx prettier -w */*.ts
+npx prettier -w src/color_schemes/*.ts
+npx prettier -w build_font.js
+
 #Build JS/CSS bundles with gulp
 npm run build
 

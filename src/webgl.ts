@@ -574,7 +574,7 @@ export async function GLInitialize(
     assets.MSAColors = ColorCollection["MAFFT Nucleotide"];
     assets.ColorTexture = BuildColorTexture(assets.MSAColors);
   } else {
-    assets.MSAColors = ColorCollection["MAFFT General"];
+    assets.MSAColors = ColorCollection["Miyata"];
     assets.ColorTexture = BuildColorTexture(assets.MSAColors);
   }
 

@@ -1,5 +1,5 @@
 export default {
-  Name: "MAFFT General",
+  Name: "Miyata",
   Glyphs: {
     " ": "#FFFFFF",
     "-": "#FFFFFF",

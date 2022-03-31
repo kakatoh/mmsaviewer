@@ -4,6 +4,9 @@
 rm -rf build
 mkdir -p build/dist
 
+#Replace msdfgen binary with newer version that has better compatibility
+cp lib/msdfgen/msdfgen.linux node_modules/msdf-bmfont-xml/bin/linux/msdfgen.linux
+
 #Build font texture for Meslo for MSA field
 mkdir -p build/dist/img
 npx msdf-bmfont -f json -s 36 -m 1024,1024 lib/font_meslo/MesloLGSDZ-Regular.ttf

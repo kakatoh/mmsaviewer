@@ -13,6 +13,7 @@ cp node_modules/gulp-concat-css/LICENSE LICENSE_NOTICES/gulp-concat-css_LICENSE
 cp node_modules/gulp-typescript/readme.md LICENSE_NOTICES/gulp-typescript_LICENSE.md
 cp node_modules/gulp-uglify/LICENSE.md LICENSE_NOTICES/gulp-uglify_LICENSE.md
 cp node_modules/hammerjs/LICENSE.md LICENSE_NOTICES/hammerjs_LICENSE.md
+cp node_modules/jquery/LICENSE.txt LICENSE_NOTICES/jquery_LICENSE.txt
 cp node_modules/msdf-bmfont-xml/LICENSE.md LICENSE_NOTICES/msdf-bmfont-xml_LICENSE.md
 cp node_modules/pako/LICENSE LICENSE_NOTICES/pako_LICENSE
 cp node_modules/popper.js/README.md LICENSE_NOTICES/popper.js_LICENSE.md

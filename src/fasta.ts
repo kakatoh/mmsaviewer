@@ -126,7 +126,7 @@ export class ParsedFASTA {
       const uint8_count_dict: Uint8CountDict = {};
       for (var y = 1; y < this.sequences.length; y++) {
         if (x < this.sequences[y].length) {
-          const glyph = this.sequences[y][x];
+          var glyph = this.sequences[y][x];
           //Skip -
           if (glyph == 45) {
             continue;
@@ -134,6 +134,10 @@ export class ParsedFASTA {
           //Skip spaces
           if (glyph == 32) {
             continue;
+          }
+          if (64 < glyph && glyph < 91) {
+            //isUpperCase?
+            glyph += 32; //toLowerCase()?
           }
           if (glyph in uint8_count_dict) {
             uint8_count_dict[glyph] += 1;
@@ -166,6 +170,8 @@ export class ParsedFASTA {
         consensus_buffer[x] = first[0];
       }
     }
+
+    //console.log("score_buffer=" + score_buffer);
 
     //Save to first position in sequence data and public properties
     this.sequences[0] = consensus_buffer;

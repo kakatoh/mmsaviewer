@@ -34,11 +34,15 @@ void main(void) {
   //We add 0.5 here to account for the case where float truncating makes it harder to
   //recover the original ASCII
   float msa_glyph = floor( (normalized_msa_glyph * 255.0) + 0.5 );
+  float msa_glyph_low = msa_glyph;
   if(msa_glyph < 32.0) {
     return;
   }
   if(msa_glyph >= 127.0) {
     return;
+  }
+  if(64.0<msa_glyph && msa_glyph<91.0) { //isUpperCase?
+    msa_glyph_low = msa_glyph + 32.0; //toLowerCase()?
   }
 
   //Pull ascii consensus data along with float score
@@ -58,7 +62,7 @@ void main(void) {
   vec4 bg_color = texture2D(msa_color_texture, vec2(color_index, 0.5));
   if( consensus_options.x > 0.0 ) {
     //If color by consensus is enabled, the glyph matches consensus, and it's above cutoff...
-    if( (int(msa_glyph) == int(consensus_glyph)) && (consensus_score > consensus_options.z) ) {
+    if( (int(msa_glyph_low) == int(consensus_glyph)) && (consensus_score > consensus_options.z) ) {
       //If vary color by consensus is enabled we do a mix
       if( consensus_options.y > 0.0 ) {
         bg_color = mix(gap_color, bg_color, consensus_score);
